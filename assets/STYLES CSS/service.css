@@ -1,0 +1,436 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+
+header{
+    background: url(/assets/IMAGE/Service_img/Third-Party-Libraries-Security-Developer-Dice.jpg) no-repeat center center/cover;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    margin: 0 25px;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 60%);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 200px;
+    position: relative; 
+    z-index: 1;
+}
+
+.menu-icon{
+    display: none;
+    margin-top: -22px;
+}
+
+
+.menu-icon i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+} 
+
+
+#close{
+    opacity: 0;
+}
+
+.logo a{
+    color: blue;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Pour que le contenu reste au-dessus de la superposition */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: black;
+}
+
+
+
+
+
+.para1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#para2{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.grid-container{
+    display: flex;
+    margin: 40px 100px;
+}
+
+
+.icon-background {
+    position: relative; /* Needed for absolute positioning of pseudo-elements */
+    display: inline-block; /* Aligns with the image */
+    padding: 15px; /* Space around the icon */
+    border-radius: 50%; /* Rounded edges */
+    margin: 0 83px;
+}
+
+.icon-background::before,
+.icon-background::after {
+    content: '';
+    position: absolute;
+    border-radius: 70px; /* Rounded shapes */
+    opacity: 0.1; /* Light opacity */
+}
+
+.icon-background::before {
+    background: rgba(0, 0, 255, 0.2); /* Light blue shape */
+    width: 67px;
+    height: 100px;
+    top: -7px;
+    left: 2px; /* Position */
+}
+
+.icon-background::after {
+    background: rgba(0, 0, 255, 0.15); /* Slightly darker shape */
+    width: 123px;
+    height: 57px;
+    top: 12px;
+    left: -29px; 
+   /* transform: rotate(40deg);*/
+}
+
+.verifier{
+  width: 50px;
+  position: relative; /* Ensure images stay above background */
+  z-index: 1; /* Bring images above the background shapes */
+}
+.securite{
+    width: 55px;
+    position: relative; /* Ensure images stay above background */
+    z-index: 1; /* Bring images above the background shapes */
+}
+.vulnerable{
+    width: 50px;
+    position: relative; /* Ensure images stay above background */
+    z-index: 1; /* Bring images above the background shapes */
+}
+.admire{
+    width: 55px;
+    position: relative; /* Ensure images stay above background */
+    z-index: 1; /* Bring images above the background shapes */
+}
+.archi{
+    width: 50px;
+    position: relative; /* Ensure images stay above background */
+    z-index: 1; /* Bring images above the background shapes */
+}
+.eduque{
+    width: 55px;
+    position: relative; /* Ensure images stay above background */
+    z-index: 1; /* Bring images above the background shapes */
+}
+.shield, .vulnerability, .architecture{
+   
+    margin: 10px 50px;
+}
+#para3{
+    color: black;
+    font-weight: bold;
+}
+#p2{
+    text-align: center;
+    
+}
+
+.list{
+    margin: 40px auto;
+}
+.list p{
+    line-height: 40px;
+}
+
+
+.titre{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 80px 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 6px 5px 20px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+.titre h1{
+    margin-top: 70px;
+}
+.button-request{
+    margin: 30px;
+    padding: 15px;
+    border-radius: 45px;
+    border: none;
+    color: #fff;
+    background-color: #0000ff;
+}
+
+.button-request:hover{
+    color: #fff;
+    background-color: #0513d3;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 100px 55px;
+    line-height: 20px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    line-height: 30px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.footer-links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer-social{
+    /*display: flex;*/
+    margin: 0 200px;
+    padding: 0 50px;
+}
+.footer-social a {
+    color: #0000ff; 
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px 6px;
+   
+}
+
+.footer-social img {
+    width: 14px;
+    height: 24px;
+}
+
+.phrase{
+    color: #007BFF;
+    line-height: 40px;
+    text-align: left;
+}
+#footer-num{
+    color: #007BFF;
+}
+
+
+
+
+
+@media (max-width: 480px){
+    body {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        justify-content: center; /* Centre les éléments verticalement */
+        
+    }
+
+    header{
+        margin: 0;
+    }
+
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 31px;
+        align-items: center;  
+        gap: 90px;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: whitesmoke;
+        gap: 0;
+        overflow: hidden;
+        margin: 0 -31%;
+    }
+    .logo a{
+        font-size: 2.5rem;
+        margin-left: -15px;
+    }
+
+
+    nav ul li{
+        padding: 2px;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 15px;
+    }
+
+    #menuList{
+        transition: all 0.5s;
+    }
+    
+   #close{
+    display: block;
+    opacity: 1;
+   }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list p{
+        margin: 0 17%;
+        display: block;
+    }
+
+    .shield, .vulnerability, .architecture{
+        margin: 0;
+    }
+
+
+    .footer{
+        padding: 141px 20px;
+    }
+
+
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        margin-top: 20px;
+    }
+
+    .titre{
+        margin: 0px 0px 50px;
+        height: auto;
+    }
+  
+
+    .footer-column{
+        margin-top: -60px;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-social{
+        margin: 10px;
+    }
+}
